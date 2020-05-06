@@ -132,6 +132,11 @@ p {
   height: 100vh;
   background: #05063f url("../circus-show.png") no-repeat right 85%;
   background-size: contain;
+
+  .txt-header {
+    width: 350px;
+    max-width: 90%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -239,19 +244,6 @@ p {
     background: #fff;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
 
-    // .performances-name {
-    //   width: 170px;
-    //   height: 170px;
-    //   line-height: 170px;
-    //   border: 5px dashed #fff;
-    //   background: #05063f;
-    //   border-radius: 100%;
-    //   margin: auto;
-    //   margin-bottom: 20px;
-    //   text-align: center;
-    //   color: #fff;
-    //   font-size: 2em;
-    // }
     .block-img {
       position: relative;
       width: 180px;
@@ -276,7 +268,7 @@ p {
         left: 0;
         bottom: 0;
         border-radius: 100%;
-        background: #05063f7e;
+        background: #05063f43;
         z-index: 999;
         right: 0;
       }
@@ -324,7 +316,7 @@ p {
 
     .square-infos-about-us {
       height: 150px;
-      border: 5px solid #c7191fde;
+      border: 5px dashed #c7191fde;
       background: #fed11b;
 
       .number {
@@ -359,13 +351,13 @@ p {
 }
 
 .table-bg {
-  background: #dd2c32de;
-  color: #f6f4f4;
+  background: #fff;
+  color: #c71920;
 }
 
 th,
 td {
-  border: 2px solid #c71920;
+  border: 1px solid #c71920;
   padding: 15px 15px;
   width: 30%;
 }
@@ -432,10 +424,11 @@ th {
 // FOOTER
 
 .footer {
-  background: #05063f;
+  background: #c71920;
   padding: 20px;
   color: #fff;
   text-align: center;
+  font-size: 0.8em;
 }
 @media screen and (max-width: 768px) {
   .container {
