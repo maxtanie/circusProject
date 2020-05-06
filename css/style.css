@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:800");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: "source sans pro"; }
+
+html {
+  scroll-behavior: smooth; }
+
+img {
+  max-width: 100%; }
+
+h1,
+h2,
+h3 {
+  font-family: "Amatic SC"; }
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #05063f; }
+
+h1 {
+  font-size: 8em; }
+
+h2 {
+  text-align: center; }
+
+.line-height-normal {
+  line-height: 1.6; }
+
+p {
+  font-family: "source sans pro";
+  font-weight: normal; }
+
+.auto {
+  margin: auto;
+  display: block; }
+
+.absolute-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.container {
+  width: 1040px;
+  max-width: 100%;
+  margin: auto; }
+
+.container-performances {
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+  background: #000; }
+
+.yellow-txt-color {
+  color: #fed11b; }
+
+.blue-dark-txt-color {
+  color: #05063f; }
+
+.red-txt-color {
+  color: #c71920; }
+
+.white-txt-color {
+  color: #fff; }
+
+.yellow-bg-color {
+  background-color: #fed11b; }
+
+.blue-dark-bg-color {
+  background-color: #05063f; }
+
+.red-bg-color {
+  background-color: #c71920; }
+
+.flex-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.bg-header {
+  width: 100%;
+  height: 100vh;
+  background: #05063f url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-circus-entertainment-poster-background-image_143632.jpg") no-repeat right 85%;
+  background-size: contain; }
+
+@media screen and (max-width: 768px) {
+  .flex-menu {
+    display: block;
+    text-align: center; } }
+.menu-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #05063f;
+  z-index: 99; }
+  .menu-nav .list-items {
+    cursor: pointer;
+    list-style-type: none;
+    font-weight: lighter; }
+  .menu-nav .anchors-list {
+    padding: 15px 25px;
+    display: block;
+    font-family: "Amatic SC";
+    color: #fed11b;
+    text-decoration: none;
+    font-size: 1.5em; }
+
+.section-padding {
+  padding: 90px 15px;
+  padding-bottom: 90px; }
+
+.title-section {
+  font-size: 5em; }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; }
+
+.txt-description-section {
+  position: relative;
+  background: #05063f;
+  width: 490px;
+  padding: 20px 25px;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  display: block; }
+
+.bg-prices {
+  background: transparent url("../Groupe 14.png"); }
+
+.bg-values {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.performances-section {
+  margin-top: -2px; }
+  .performances-section .lists-performances {
+    padding: 25px;
+    list-style-type: none;
+    text-align: center;
+    background: #fff;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); }
+    .performances-section .lists-performances .block-img {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      border: 12px solid #fed11b;
+      border-radius: 100%;
+      margin: auto;
+      display: block;
+      margin-bottom: 20px; }
+      .performances-section .lists-performances .block-img .img-performances {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 100%; }
+      .performances-section .lists-performances .block-img:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border-radius: 100%;
+        background: #05063f7e;
+        z-index: 999;
+        right: 0; }
+
+.about-us-section {
+  padding: 90px 0; }
+  .about-us-section .img-about-us {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .about-us-section .bubble-msg {
+    position: relative;
+    width: 350px;
+    padding: 10px;
+    background: #c71920;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    .about-us-section .bubble-msg:after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      right: -25px;
+      -webkit-transform: rotate(47deg);
+              transform: rotate(47deg);
+      border: 25px solid transparent;
+      border-left: 25px solid #c71920; }
+  .about-us-section .infos-about-us {
+    padding: 50px 0;
+    background: #c71920;
+    margin-top: 40px;
+    text-align: center;
+    color: #c71920 !important; }
+    .about-us-section .infos-about-us .square-infos-about-us {
+      width: 160px;
+      height: 150px;
+      border: 5px dashed #c7191fde;
+      background: #fed11b; }
+      .about-us-section .infos-about-us .square-infos-about-us .number {
+        margin-top: 20px;
+        font-family: "source sans pro";
+        color: #c71920 !important;
+        font-size: 2.8em; }
+      .about-us-section .infos-about-us .square-infos-about-us .txt {
+        text-transform: uppercase;
+        font-size: 0.8em; }
+
+.prices-section {
+  min-height: 50vh !important; }
+  .prices-section .content-prices {
+    margin-top: 100px; }
+
+.table {
+  border-collapse: collapse;
+  width: 700px;
+  max-width: 100%;
+  margin-top: 50px;
+  text-align: center; }
+
+.table-bg {
+  background: #dd2c32de;
+  color: #f6f4f4; }
+
+th,
+td {
+  border: 2px solid #c71920;
+  padding: 15px 15px; }
+
+.special-price {
+  width: 30%; }
+
+th {
+  padding: 10px;
+  text-align: center; }
+
+.contact-us-section {
+  background: transparent url("https://s3.amazonaws.com/southfloridareporter/wp-content/uploads/2016/04/17084731/2016-04-30T111815Z_2_LYNXNPEC3T06C_RTROPTP_4_USA-CIRCUS-ELEPHANTS-scaled.jpg") no-repeat;
+  background-size: cover; }
+  .contact-us-section .form-block {
+    width: 600px;
+    max-width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    background: #c7191f74;
+    border: 1px solid #c7191f26;
+    padding: 40px; }
+    .contact-us-section .form-block .label-style {
+      color: #fff;
+      display: block;
+      margin-bottom: 15px; }
+    .contact-us-section .form-block .input-style,
+    .contact-us-section .form-block .message-style {
+      outline: none;
+      width: 100%;
+      background: #c7191f74;
+      border: transparent;
+      margin-bottom: 50px;
+      padding: 15px; }
+    .contact-us-section .form-block ::-webkit-input-placeholder {
+      color: #fff; }
+    .contact-us-section .form-block :-ms-input-placeholder {
+      color: #fff; }
+    .contact-us-section .form-block ::placeholder {
+      color: #fff; }
+    .contact-us-section .form-block :-webkit-input-placeholder {
+      color: #fff; }
+    .contact-us-section .form-block .btn-contact-us-style {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      width: 150px;
+      padding: 12px 25px;
+      background: #c71920;
+      color: #fff;
+      font-size: 1.2em; }
+
+.footer {
+  background: #05063f;
+  padding: 20px;
+  color: #fff;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%; } }

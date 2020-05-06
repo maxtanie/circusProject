@@ -1,0 +1,424 @@
+// FONTS
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:800");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+
+// DEFAULT CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "source sans pro";
+}
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+h1,
+h2,
+h3 {
+  font-family: "Amatic SC";
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #05063f;
+}
+h1 {
+  font-size: 8em;
+}
+
+h2 {
+  text-align: center;
+}
+
+.line-height-normal {
+  line-height: 1.6;
+}
+
+p {
+  font-family: "source sans pro";
+  font-weight: normal;
+}
+.auto {
+  margin: auto;
+  display: block;
+}
+
+.absolute-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// .flex-menu {
+//   display: flex;
+//   flex-wrap: wrap;
+//   flex-direction: row;
+// }
+
+// CONTAINERS
+.container {
+  width: 1040px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.container-performances {
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+  background: #000;
+}
+// COLORSTXT
+
+.yellow-txt-color {
+  color: #fed11b;
+}
+
+.blue-dark-txt-color {
+  color: #05063f;
+}
+
+.red-txt-color {
+  color: #c71920;
+}
+
+.white-txt-color {
+  color: #fff;
+}
+
+// COLORSBG
+.yellow-bg-color {
+  background-color: #fed11b;
+}
+
+.blue-dark-bg-color {
+  background-color: #05063f;
+}
+
+.red-bg-color {
+  background-color: #c71920;
+}
+
+.flex-menu {
+  display: flex;
+}
+// HEADER
+.bg-header {
+  width: 100%;
+  height: 100vh;
+  background: #05063f
+    url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-circus-entertainment-poster-background-image_143632.jpg")
+    no-repeat right 85%;
+  background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-menu {
+    display: block;
+    text-align: center;
+  }
+}
+
+.menu-nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #05063f;
+  z-index: 99;
+
+  .list-items {
+    cursor: pointer;
+    list-style-type: none;
+    font-weight: lighter;
+  }
+
+  .anchors-list {
+    padding: 15px 25px;
+    display: block;
+    font-family: "Amatic SC";
+    color: #fed11b;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+}
+
+// SECTION DEFAULT STYLE
+.section-padding {
+  padding: 90px 15px;
+  padding-bottom: 90px;
+}
+
+.title-section {
+  font-size: 5em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.grid {
+  // display: flex;
+  // flex-wrap: wrap;
+  // flex-direction: row;
+  // justify-content: center;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.txt-description-section {
+  position: relative;
+  background: #05063f;
+  width: 490px;
+  padding: 20px 25px;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.bg-prices {
+  background: transparent url("../Groupe\ 14.png");
+}
+
+.bg-values {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// PERFOMANCES SECTION
+.performances-section {
+  margin-top: -2px;
+
+  .lists-performances {
+    padding: 25px;
+    list-style-type: none;
+    text-align: center;
+
+    background: #fff;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+    // .performances-name {
+    //   width: 170px;
+    //   height: 170px;
+    //   line-height: 170px;
+    //   border: 5px dashed #fff;
+    //   background: #05063f;
+    //   border-radius: 100%;
+    //   margin: auto;
+    //   margin-bottom: 20px;
+    //   text-align: center;
+    //   color: #fff;
+    //   font-size: 2em;
+    // }
+    .block-img {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      border: 12px solid #fed11b;
+      border-radius: 100%;
+      margin: auto;
+      display: block;
+      margin-bottom: 20px;
+
+      .img-performances {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 100%;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border-radius: 100%;
+        background: #05063f7e;
+        z-index: 999;
+        right: 0;
+      }
+    }
+  }
+}
+
+// ABOUT US SECTION
+.about-us-section {
+  padding: 90px 0;
+  .img-about-us {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .bubble-msg {
+    position: relative;
+    width: 350px;
+    padding: 10px;
+    background: #c71920;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      right: -25px;
+      transform: rotate(47deg);
+      border: 25px solid transparent;
+      border-left: 25px solid #c71920;
+    }
+  }
+
+  .infos-about-us {
+    padding: 50px 0;
+    background: #c71920;
+    margin-top: 40px;
+    text-align: center;
+    color: #c71920 !important;
+
+    .square-infos-about-us {
+      width: 160px;
+      height: 150px;
+      border: 5px dashed #c7191fde;
+      background: #fed11b;
+
+      .number {
+        margin-top: 20px;
+        font-family: "source sans pro";
+        color: #c71920 !important;
+        font-size: 2.8em;
+      }
+
+      .txt {
+        text-transform: uppercase;
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+// PRICES SECTION
+.prices-section {
+  min-height: 50vh !important;
+  .content-prices {
+    margin-top: 100px;
+  }
+}
+
+.table {
+  border-collapse: collapse;
+  width: 700px;
+  max-width: 100%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.table-bg {
+  background: #dd2c32de;
+  color: #f6f4f4;
+}
+
+th,
+td {
+  border: 2px solid #c71920;
+
+  padding: 15px 15px;
+}
+
+.special-price {
+  width: 30%;
+}
+
+th {
+  padding: 10px;
+  text-align: center;
+}
+
+// CONTACT-US SECTION
+.contact-us-section {
+  background: transparent
+    url("https://s3.amazonaws.com/southfloridareporter/wp-content/uploads/2016/04/17084731/2016-04-30T111815Z_2_LYNXNPEC3T06C_RTROPTP_4_USA-CIRCUS-ELEPHANTS-scaled.jpg")
+    no-repeat;
+  background-size: cover;
+
+  .form-block {
+    width: 600px;
+    max-width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    background: #c7191f74;
+    border: 1px solid #c7191f26;
+    padding: 40px;
+
+    .label-style {
+      color: #fff;
+      display: block;
+      margin-bottom: 15px;
+    }
+    .input-style,
+    .message-style {
+      outline: none;
+      width: 100%;
+      background: #c7191f74;
+      border: transparent;
+      // border-bottom: 1px solid #fff;
+      margin-bottom: 50px;
+      padding: 15px;
+    }
+
+    ::placeholder {
+      color: #fff;
+    }
+
+    :-webkit-input-placeholder {
+      color: #fff;
+    }
+
+    .btn-contact-us-style {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      width: 150px;
+      padding: 12px 25px;
+      background: #c71920;
+      color: #fff;
+      font-size: 1.2em;
+    }
+  }
+}
+
+// FOOTER
+
+.footer {
+  background: #05063f;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
