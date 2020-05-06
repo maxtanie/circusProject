@@ -43,11 +43,18 @@ p {
   display: block; }
 
 .absolute-top {
+  width: 100%;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+  @media screen and (max-width: 768px) {
+    .absolute-top {
+      top: 70%;
+      -webkit-transform: translate(-50%, -70%);
+              transform: translate(-50%, -70%); } }
 
 .container {
   width: 1040px;
@@ -89,7 +96,7 @@ p {
 .bg-header {
   width: 100%;
   height: 100vh;
-  background: #05063f url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-circus-entertainment-poster-background-image_143632.jpg") no-repeat right 85%;
+  background: #05063f url("../circus-show.png") no-repeat right 85%;
   background-size: contain; }
 
 @media screen and (max-width: 768px) {
@@ -97,10 +104,10 @@ p {
     display: block;
     text-align: center; } }
 .menu-nav {
-  position: -webkit-sticky;
-  position: sticky;
+  position: static;
   top: 0;
   width: 100%;
+  padding: 15px 0;
   background: #05063f;
   z-index: 99; }
   .menu-nav .list-items {
@@ -113,10 +120,14 @@ p {
     font-family: "Amatic SC";
     color: #fed11b;
     text-decoration: none;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .menu-nav .anchors-list:hover {
+      color: #fff; }
 
 .section-padding {
-  padding: 90px 15px;
+  padding: 60px 15px;
   padding-bottom: 90px; }
 
 .title-section {
@@ -141,6 +152,11 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px; }
+
+.grid-about-us {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-gap: 20px; }
 
 .txt-description-section {
   position: relative;
@@ -198,7 +214,8 @@ p {
         right: 0; }
 
 .about-us-section {
-  padding: 90px 0; }
+  padding-top: 90px;
+  padding-bottom: 40px; }
   .about-us-section .img-about-us {
     margin-top: 40px;
     margin-bottom: 40px; }
@@ -222,13 +239,12 @@ p {
       border: 25px solid transparent;
       border-left: 25px solid #c71920; }
   .about-us-section .infos-about-us {
-    padding: 50px 0;
+    padding: 50px 20px;
     background: #c71920;
     margin-top: 40px;
     text-align: center;
     color: #c71920 !important; }
     .about-us-section .infos-about-us .square-infos-about-us {
-      width: 160px;
       height: 150px;
       border: 5px dashed #c7191fde;
       background: #fed11b; }
