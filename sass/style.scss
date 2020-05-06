@@ -60,8 +60,8 @@ p {
   transform: translate(-50%, -50%);
 
   @media screen and (max-width: 768px) {
-    top: 70%;
-    transform: translate(-50%, -70%);
+    top: 80%;
+    transform: translate(-50%, -80%);
   }
 }
 
@@ -221,7 +221,7 @@ p {
 
 // PERFOMANCES SECTION
 .performances-section {
-  margin-top: -2px;
+  margin-top: -10px;
 
   .lists-performances {
     padding: 25px;
@@ -344,7 +344,7 @@ p {
 
 .table {
   border-collapse: collapse;
-  width: 700px;
+  width: 500px;
   max-width: 100%;
   margin-top: 50px;
   text-align: center;
@@ -358,11 +358,7 @@ p {
 th,
 td {
   border: 2px solid #c71920;
-
   padding: 15px 15px;
-}
-
-.special-price {
   width: 30%;
 }
 
