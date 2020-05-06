@@ -87,6 +87,9 @@ p {
 .white-txt-color {
   color: #fff; }
 
+.black-txt-color {
+  color: #000; }
+
 .yellow-bg-color {
   background-color: #fed11b; }
 
@@ -95,6 +98,9 @@ p {
 
 .red-bg-color {
   background-color: #c71920; }
+
+.white-bg-color {
+  background-color: #fff; }
 
 .flex-menu {
   display: -webkit-box;
@@ -172,14 +178,42 @@ p {
 
 .txt-description-section {
   position: relative;
-  background: #05063f;
   width: 490px;
-  padding: 20px 25px;
-  display: inline-block;
-  color: #fff;
+  max-width: 95%;
+  font-size: 0.9em;
+  padding: 15px 25px;
   text-align: center;
-  margin: auto;
-  display: block; }
+  margin-top: 25px; }
+  .txt-description-section:before, .txt-description-section:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 25px solid transparent;
+    border-left: 25px solid #fed11b; }
+  .txt-description-section:after {
+    right: 0 !important;
+    border-right: 25px solid #fed11b; }
+
+.border-description-about-us:before, .border-description-about-us:after {
+  border-left: 25px solid #fff !important; }
+.border-description-about-us:after {
+  border-right: 25px solid #fff !important; }
+
+.border-description-about-us:before, .border-description-about-us:after {
+  border-left: 25px solid #fff !important; }
+.border-description-about-us:after {
+  border-right: 25px solid #fff !important; }
+
+.border-description-prices:before, .border-description-prices:after {
+  border-left: 25px solid #c71920 !important; }
+.border-description-prices:after {
+  border-right: 25px solid #c71920 !important; }
+
+.border-description-contact-us:before, .border-description-contact-us:after {
+  border-left: 25px solid #000 !important; }
+.border-description-contact-us:after {
+  border-right: 25px solid #000 !important; }
 
 .bg-prices {
   background: transparent url("../Groupe 14.png"); }
@@ -343,7 +377,3 @@ th {
   color: #fff;
   text-align: center;
   font-size: 0.8em; }
-
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%; } }

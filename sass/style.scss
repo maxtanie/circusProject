@@ -73,12 +73,6 @@ p {
   }
 }
 
-// .flex-menu {
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-direction: row;
-// }
-
 // CONTAINERS
 .container {
   width: 1040px;
@@ -110,6 +104,10 @@ p {
   color: #fff;
 }
 
+.black-txt-color {
+  color: #000;
+}
+
 // COLORSBG
 .yellow-bg-color {
   background-color: #fed11b;
@@ -121,6 +119,10 @@ p {
 
 .red-bg-color {
   background-color: #c71920;
+}
+
+.white-bg-color {
+  background-color: #fff;
 }
 
 .flex-menu {
@@ -194,10 +196,6 @@ p {
 }
 
 .grid {
-  // display: flex;
-  // flex-wrap: wrap;
-  // flex-direction: row;
-  // justify-content: center;
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -212,14 +210,66 @@ p {
 
 .txt-description-section {
   position: relative;
-  background: #05063f;
   width: 490px;
-  padding: 20px 25px;
-  display: inline-block;
-  color: #fff;
+  max-width: 95%;
+  font-size: 0.9em;
+  padding: 15px 25px;
   text-align: center;
-  margin: auto;
-  display: block;
+  margin-top: 25px;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 25px solid transparent;
+    border-left: 25px solid #fed11b;
+  }
+  &:after {
+    right: 0 !important;
+    border-right: 25px solid #fed11b;
+  }
+}
+
+.border-description-about-us {
+  &:before,
+  &:after {
+    border-left: 25px solid #fff !important;
+  }
+  &:after {
+    border-right: 25px solid #fff !important;
+  }
+}
+
+.border-description-about-us {
+  &:before,
+  &:after {
+    border-left: 25px solid #fff !important;
+  }
+  &:after {
+    border-right: 25px solid #fff !important;
+  }
+}
+
+.border-description-prices {
+  &:before,
+  &:after {
+    border-left: 25px solid #c71920 !important;
+  }
+  &:after {
+    border-right: 25px solid #c71920 !important;
+  }
+}
+
+.border-description-contact-us {
+  &:before,
+  &:after {
+    border-left: 25px solid #000 !important;
+  }
+  &:after {
+    border-right: 25px solid #000 !important;
+  }
 }
 
 .bg-prices {
@@ -431,9 +481,4 @@ th {
   color: #fff;
   text-align: center;
   font-size: 0.8em;
-}
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
 }
