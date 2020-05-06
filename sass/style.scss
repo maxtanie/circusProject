@@ -40,6 +40,9 @@ h1 {
 
 h2 {
   text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 4em !important;
+  }
 }
 
 .line-height-normal {
@@ -386,7 +389,7 @@ th {
     color: #fff;
     background: #c7191f74;
     border: 1px solid #c7191f26;
-    padding: 40px;
+    padding: 15px;
 
     .label-style {
       color: #fff;

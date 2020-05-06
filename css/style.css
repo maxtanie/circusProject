@@ -34,6 +34,9 @@ h1 {
 
 h2 {
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 4em !important; } }
 
 .line-height-normal {
   line-height: 1.6; }
@@ -298,7 +301,7 @@ th {
     color: #fff;
     background: #c7191f74;
     border: 1px solid #c7191f26;
-    padding: 40px; }
+    padding: 15px; }
     .contact-us-section .form-block .label-style {
       color: #fff;
       display: block;
