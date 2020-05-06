@@ -110,9 +110,13 @@ p {
 .bg-header {
   width: 100%;
   height: 100vh;
-  background: #05063f url("../circus-show.png") no-repeat right 85%;
+  background: #05063f url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-circus-entertainment-poster-background-image_143632.jpg") no-repeat right 85%;
   background-size: contain;
   margin-top: -2px; }
+  @media screen and (max-width: 1067px) {
+    .bg-header {
+      background: #05063f url("../circus-show.png") no-repeat right 85%;
+      background-size: contain; } }
   .bg-header .txt-header {
     width: 350px;
     max-width: 90%; }
