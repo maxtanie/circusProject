@@ -315,16 +315,16 @@ th {
     .contact-us-section .form-block .message-style {
       outline: none;
       width: 100%;
-      background: #c7191f74;
+      background: rgba(255, 255, 255, 0.841);
       border: transparent;
       margin-bottom: 50px;
       padding: 15px; }
     .contact-us-section .form-block ::-webkit-input-placeholder {
-      color: #fff; }
+      color: #c71920; }
     .contact-us-section .form-block :-ms-input-placeholder {
-      color: #fff; }
+      color: #c71920; }
     .contact-us-section .form-block ::placeholder {
-      color: #fff; }
+      color: #c71920; }
     .contact-us-section .form-block :-webkit-input-placeholder {
       color: #fff; }
     .contact-us-section .form-block .btn-contact-us-style {

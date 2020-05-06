@@ -395,7 +395,7 @@ th {
     .message-style {
       outline: none;
       width: 100%;
-      background: #c7191f74;
+      background: rgba(255, 255, 255, 0.841);
       border: transparent;
       // border-bottom: 1px solid #fff;
       margin-bottom: 50px;
@@ -403,7 +403,7 @@ th {
     }
 
     ::placeholder {
-      color: #fff;
+      color: #c71920;
     }
 
     :-webkit-input-placeholder {
