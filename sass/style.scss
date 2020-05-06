@@ -132,6 +132,7 @@ p {
   height: 100vh;
   background: #05063f url("../circus-show.png") no-repeat right 85%;
   background-size: contain;
+  margin-top: -2px;
 
   .txt-header {
     width: 350px;
@@ -208,6 +209,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   grid-gap: 10px;
 }
+
 .txt-description-section {
   position: relative;
   background: #05063f;
@@ -316,7 +318,7 @@ p {
 
     .square-infos-about-us {
       height: 150px;
-      border: 5px dashed #c7191fde;
+      border: 5px solid #c7191fde;
       background: #fed11b;
 
       .number {
