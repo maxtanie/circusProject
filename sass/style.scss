@@ -11,6 +11,7 @@
 
 body {
   font-family: "source sans pro";
+  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
@@ -32,6 +33,9 @@ h3 {
 }
 h1 {
   font-size: 8em;
+  @media screen and (max-width: 768px) {
+    font-size: 6em;
+  }
 }
 
 h2 {
@@ -193,7 +197,7 @@ p {
 .grid-about-us {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 .txt-description-section {
   position: relative;
@@ -221,7 +225,7 @@ p {
 
 // PERFOMANCES SECTION
 .performances-section {
-  margin-top: -10px;
+  margin-top: -12px;
 
   .lists-performances {
     padding: 25px;
@@ -316,14 +320,14 @@ p {
 
     .square-infos-about-us {
       height: 150px;
-      border: 5px dashed #c7191fde;
+      border: 5px solid #c7191fde;
       background: #fed11b;
 
       .number {
         margin-top: 20px;
         font-family: "source sans pro";
         color: #c71920 !important;
-        font-size: 2.8em;
+        font-size: 2.6em;
       }
 
       .txt {

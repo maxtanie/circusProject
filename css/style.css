@@ -7,7 +7,8 @@
           box-sizing: border-box; }
 
 body {
-  font-family: "source sans pro"; }
+  font-family: "source sans pro";
+  overflow-x: hidden; }
 
 html {
   scroll-behavior: smooth; }
@@ -27,6 +28,9 @@ h3 {
 
 h1 {
   font-size: 8em; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 6em; } }
 
 h2 {
   text-align: center; }
@@ -156,7 +160,7 @@ p {
 .grid-about-us {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  grid-gap: 20px; }
+  grid-gap: 10px; }
 
 .txt-description-section {
   position: relative;
@@ -180,7 +184,7 @@ p {
   background-size: cover; }
 
 .performances-section {
-  margin-top: -10px; }
+  margin-top: -12px; }
   .performances-section .lists-performances {
     padding: 25px;
     list-style-type: none;
@@ -246,13 +250,13 @@ p {
     color: #c71920 !important; }
     .about-us-section .infos-about-us .square-infos-about-us {
       height: 150px;
-      border: 5px dashed #c7191fde;
+      border: 5px solid #c7191fde;
       background: #fed11b; }
       .about-us-section .infos-about-us .square-infos-about-us .number {
         margin-top: 20px;
         font-family: "source sans pro";
         color: #c71920 !important;
-        font-size: 2.8em; }
+        font-size: 2.6em; }
       .about-us-section .infos-about-us .square-infos-about-us .txt {
         text-transform: uppercase;
         font-size: 0.8em; }
