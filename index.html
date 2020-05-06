@@ -2,13 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      user-scalable="no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Wild Circle</title>
   </head>
   <body>
@@ -51,7 +48,7 @@
           Our mission are to give you smile and forget your problem.
         </p> -->
         <!-- TODO: En utilisant du css place ces trois performances ("lough", "dream, "marvel at") sur la même ligne en enlevant le point généré par la balise "li". Attention, utilise bien le css pour aligner les éléments, tu ne dois pas enlever les balises "li"-->
-        <ul class="container grid">
+        <ul data-aos="zoom-in" data-aos-duration="1000" class="container grid">
           <!-- performance 1 -->
           <li class="lists-performances">
             <div class="block-img">
@@ -107,64 +104,66 @@
       <section class="about-us-section" id="about-us">
         <h2 class="title-section red-txt-color">Who are-we ?</h2>
         <!-- TODO: Cette section n'a pas encore été réalisée, tu as carte blanche pour nous montrer ta créativité -->
-        <img
-          src="https://image.freepik.com/vecteurs-libre/evenement-cirque-tentes-grande-roue-maneges-jeux-billetterie-bateau-pirate-isole_1308-32954.jpg"
-          alt="circle open"
-          class="auto img-about-us"
-        />
-        <div class="bubble-msg auto">
-          <p>That's our story & we are proud of it !</p>
-        </div>
-        <div class="infos-about-us">
-          <div class="container">
-            <div class="grid-about-us">
-              <article class="square-infos-about-us">
-                <h3 class="number">200</h3>
-                <p class="txt">
-                  Artists<br />
-                  Passionated
-                </p>
-              </article>
-              <article class="square-infos-about-us">
-                <h3 class="number">90</h3>
-                <p class="txt">
-                  Charming<br />
-                  Animals
-                </p>
-              </article>
-              <article class="square-infos-about-us">
-                <h3 class="number">+100K</h3>
-                <p class="txt">
-                  Spectators<br />
-                  Happy
-                </p>
-              </article>
-              <article class="square-infos-about-us">
-                <h3 class="number">60</h3>
-                <p class="txt">
-                  Representations<br />
-                  Each years
-                </p>
-              </article>
-              <article class="square-infos-about-us">
-                <h3 class="number">+1M</h3>
-                <p class="txt">
-                  Tickets<br />
-                  Buyed
-                </p>
-              </article>
-              <article class="square-infos-about-us">
-                <h3 class="number">500K</h3>
-                <p class="txt">
-                  Followers<br />
-                  on instragram
-                </p>
-              </article>
+        <div data-aos="zoom-in" data-aos-duration="1000">
+          <img
+            src="https://image.freepik.com/vecteurs-libre/evenement-cirque-tentes-grande-roue-maneges-jeux-billetterie-bateau-pirate-isole_1308-32954.jpg"
+            alt="circle open"
+            class="auto img-about-us"
+          />
+          <div class="bubble-msg auto">
+            <p>That's our story & we are proud of it !</p>
+          </div>
+          <div class="infos-about-us">
+            <div class="container">
+              <div class="grid-about-us">
+                <article class="square-infos-about-us">
+                  <h3 class="number">200</h3>
+                  <p class="txt">
+                    Artists<br />
+                    Passionated
+                  </p>
+                </article>
+                <article class="square-infos-about-us">
+                  <h3 class="number">90</h3>
+                  <p class="txt">
+                    Charming<br />
+                    Animals
+                  </p>
+                </article>
+                <article class="square-infos-about-us">
+                  <h3 class="number">+100K</h3>
+                  <p class="txt">
+                    Spectators<br />
+                    Happy
+                  </p>
+                </article>
+                <article class="square-infos-about-us">
+                  <h3 class="number">60</h3>
+                  <p class="txt">
+                    Representations<br />
+                    Each years
+                  </p>
+                </article>
+                <article class="square-infos-about-us">
+                  <h3 class="number">+1M</h3>
+                  <p class="txt">
+                    Tickets<br />
+                    Buyed
+                  </p>
+                </article>
+                <article class="square-infos-about-us">
+                  <h3 class="number">500K</h3>
+                  <p class="txt">
+                    Followers<br />
+                    on instragram
+                  </p>
+                </article>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="bubble-msg auto">
-          <p>Write yours now by visited us...</p>
+          <div class="bubble-msg auto">
+            <p>Write yours now by visited us...</p>
+          </div>
         </div>
       </section>
 
@@ -172,7 +171,7 @@
         class="section-padding prices-section bg-prices bg-values"
         id="prices"
       >
-        <div class="content-prices">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="content-prices">
           <h2 class="title-section white-txt-color">How much fun coast ?</h2>
           <table class="table table-bg auto">
             <thead>
@@ -220,28 +219,30 @@
         <!-- TODO: Réalise un formulaire de contact avec les champs email et message plus un bouton pour envoyer le message. Pense bien à ajouter les labels pour les différents champs
       Ce formulaire n'a pas besoin d'être fonctionnel, réalise juste la mise en forme.
     -->
-        <form action="" method="post">
+        <form data-aos="zoom-in" data-aos-duration="1000">
           <div class="form-block auto">
             <label for="name" class="label-style">Name</label>
             <input
               type="text"
               placeholder="Enter your name"
+              id="name"
               class="input-style"
             />
             <label for="email" class="label-style">Email</label>
             <input
               type="text"
               placeholder="Enter your email"
+              id="email"
               class="input-style"
             />
             <label for="message" class="label-style">Message</label>
             <textarea
               name="message"
-              id=""
               cols="30"
               rows="5"
               placeholder="Enter your message"
               class="message-style"
+              id="message"
             ></textarea>
             <button type="submit" class="btn-contact-us-style auto">
               Send
@@ -262,5 +263,9 @@
         </p>
       </footer>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
