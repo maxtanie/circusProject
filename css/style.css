@@ -116,8 +116,7 @@ p {
     display: block;
     text-align: center; } }
 .menu-nav {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   padding: 15px 0;
